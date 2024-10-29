@@ -5,10 +5,9 @@ import numpy as np
 import plotly.express as px
 
 # Load saved model
-model = joblib.load("https://raw.githubusercontent.com/1sleep231/edu-app/refs/heads/main/data.csv")  # Sesuaikan dengan lokasi model Anda
-
+model = joblib.load("https://github.com/1sleep231/edu-app/raw/refs/heads/main/rf_model.pkl")  # Sesuaikan dengan lokasi model Anda
 # Load data
-data = pd.read_csv(r"C:\Career\Dicoding\submission\data.csv", sep=';')
+data = pd.read_csv("https://raw.githubusercontent.com/1sleep231/edu-app/refs/heads/main/data.csv")
 
 # Feature importance data for predictors
 feature_importance = pd.DataFrame({
